@@ -1,0 +1,29 @@
+# Overrides the worker/default ignore file for this root-context test build.
+# Only allowlisted inputs reach the builder; never upload .env, VCS or ops files.
+**
+!worker_api/
+worker_api/*
+!worker_api/Dockerfile.test
+!worker_api/requirements.txt
+!worker_api/pytest.ini
+!worker_api/pyproject.toml
+!worker_api/alembic.ini
+!worker_api/app/
+!worker_api/app/**
+!worker_api/tests/
+!worker_api/tests/**
+!worker_api/test_support/
+!worker_api/test_support/**
+!worker_api/alembic/
+!worker_api/alembic/**
+!scripts/
+scripts/*
+!scripts/test.sh
+!scripts/dev/
+scripts/dev/*
+!scripts/dev/generate_app_spec.py
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/.pytest_cache/
+**/.env*

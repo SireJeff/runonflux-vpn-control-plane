@@ -1,0 +1,14 @@
+.env
+.env.*
+__pycache__/
+*.pyc
+*.log
+*.key
+*.pem
+.git/
+.pytest_cache/
+.mypy_cache/
+htmlcov/
+.coverage*
+uploads/
+receipts/

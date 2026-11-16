@@ -1,0 +1,20 @@
+FROM python:3.11-slim
+
+WORKDIR /workspace/worker_api
+RUN apt-get update && apt-get install -y --no-install-recommends gcc libpq-dev bash coreutils \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY worker_api/requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Deliberate source selection, not COPY worker_api/ or COPY . . .
+COPY worker_api/app ./app
+COPY worker_api/tests ./tests
+COPY worker_api/test_support ./test_support
+COPY worker_api/alembic ./alembic
+COPY worker_api/pytest.ini worker_api/pyproject.toml worker_api/alembic.ini ./
+COPY scripts/test.sh /workspace/scripts/test.sh
+COPY scripts/dev/generate_app_spec.py /workspace/scripts/dev/generate_app_spec.py
+RUN sed -i 's/\r$//' test_support/run_tests.sh /workspace/scripts/test.sh
+
+CMD ["bash", "test_support/run_tests.sh"]

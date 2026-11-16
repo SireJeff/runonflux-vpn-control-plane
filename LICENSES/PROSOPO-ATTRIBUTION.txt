@@ -1,0 +1,23 @@
+Upstream source identified by this project's Flux integration:
+Prosopo Limited, https://github.com/prosopo/captcha
+
+The upstream repository's license at revision
+b871a23d7acb372b20d0236cf91a3cf2eb30ff37 includes:
+
+Copyright 2022 PROSOPO LIMITED
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+See APACHE-2.0.txt. This attribution does not establish the exact copied-file
+mapping or complete NOTICE obligations; compare the relevant upstream revisions
+before publishing. The optional translated CLI was omitted from this snapshot.

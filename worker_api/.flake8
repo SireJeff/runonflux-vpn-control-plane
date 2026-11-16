@@ -1,0 +1,5 @@
+[flake8]
+max-line-length = 120
+exclude = __pycache__,migrations
+# E203/W503 are black-incompatible (whitespace before ':' and line-break before binary operator)
+extend-ignore = E402,E501,E712,F401,E203,W503

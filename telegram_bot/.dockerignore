@@ -1,0 +1,10 @@
+.env
+.env.*
+__pycache__/
+*.pyc
+*.log
+*.key
+*.pem
+.git/
+bot_data.pickle
+tests/

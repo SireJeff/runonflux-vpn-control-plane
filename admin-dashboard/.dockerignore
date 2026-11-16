@@ -1,0 +1,13 @@
+.env
+.env.*
+node_modules/
+.next/
+coverage/
+*.log
+*.key
+*.pem
+.git/
+e2e/.auth/
+test-results/
+playwright-report/
+*.tsbuildinfo
