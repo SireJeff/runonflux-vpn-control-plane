@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source_commit": "f35d7ba4a8403bf4bb08f8605929e722bede6a8e",
-  "status": "experimental-public-source-snapshot-not-production-verified",
+  "status": "private-local-candidate-not-cleared-for-publication",
   "files": [
     {
       "path": ".env.example",
@@ -11,9 +11,58 @@
       "overlay": true
     },
     {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "source_sha256": null,
+      "output_sha256": "f3ac3493f4f1578888055acfd4a070f2a1ffc539768fbbbca97b00848283d5b0",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "source_sha256": null,
+      "output_sha256": "99cbb2fd61670281c922cdb8552f47c81daf0bd98e6b8df5bb8344f7572d8978",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "source_sha256": null,
+      "output_sha256": "f5f95ead531669df9ad33d2d6b8c8c9fdcc215c1e3ca279524d136d016a889ef",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "source_sha256": null,
+      "output_sha256": "b13c0b9b7a73ad9d29e74324b164c896e23dc04b8e57e3f719a87abf8a66a51b",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
       "path": ".gitignore",
       "source_sha256": null,
       "output_sha256": "693e30e5cc57cdc7054fcbb47f4bc3389398e1ad8ab53ef9837cd00c66a0b57b",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "CHANGELOG.md",
+      "source_sha256": null,
+      "output_sha256": "9634bb145927055a8b4d3ccf3c842cc3d07f1b125d1e7bf2c6cbf8ed583819a2",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "source_sha256": null,
+      "output_sha256": "797074c641b1e318154ce1c3b39c0356a71ae83048172e558645ba4d76ce354b",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "source_sha256": null,
+      "output_sha256": "39abd358e9c383b4df6ef469a052507534654f30bffaf930718f4caaa4be485a",
       "replacements": 0,
       "overlay": true
     },
@@ -39,6 +88,13 @@
       "overlay": true
     },
     {
+      "path": "LICENSES/README.md",
+      "source_sha256": null,
+      "output_sha256": "3367601348e1a553ac02c9c23494974eb98d2aa47bbbeb86024864d22db58246",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
       "path": "LICENSES/SHADCN-UI.txt",
       "source_sha256": null,
       "output_sha256": "1564074e13439397221ffd522e2e504d56561994a23d371aa5e3ad43e4f5423f",
@@ -48,14 +104,28 @@
     {
       "path": "README.md",
       "source_sha256": null,
-      "output_sha256": "a517bf37341e1b3efe3f2ef849cd94c6b242988efcdc5824054cbb8927c1ce70",
+      "output_sha256": "3fc31a8e4ba6c26cbd9f1b3958a7c0d06dd866a1dc1c831a69da52d92c62d746",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "SECURITY.md",
+      "source_sha256": null,
+      "output_sha256": "c320b76e14be606aa798863a4cd128cf2d09b178f528f58e5af557c4654c06a2",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "SUPPORT.md",
+      "source_sha256": null,
+      "output_sha256": "e193a9f6f71570ff1fa0c796643df4d191e9d9568ed7f2ecabd2ecc977e0a93b",
       "replacements": 0,
       "overlay": true
     },
     {
       "path": "THIRD_PARTY_REVIEW.md",
       "source_sha256": null,
-      "output_sha256": "d106b16f3131210aafe8fc0f6acbc82ee3b2b3aafeb4a639ff378a841e98bd3b",
+      "output_sha256": "5c6d555e7f5be52869d907d9e38bc7be3d2ea5aaed3a9e0693d06830704c80fc",
       "replacements": 0,
       "overlay": true
     },
@@ -867,14 +937,14 @@
     {
       "path": "admin-dashboard/content/guides/subadmin-guide.ts",
       "source_sha256": null,
-      "output_sha256": "bece27eb376ebb6f6c00a798537ea0edefee7db30d3b5baa515cb75227d1297f",
+      "output_sha256": "dd233bac5583ba5a12b51119d1b56615f6d3dc39a811174651d1450fec227ca4",
       "replacements": 0,
       "overlay": true
     },
     {
       "path": "admin-dashboard/content/guides/superadmin-guide.ts",
       "source_sha256": null,
-      "output_sha256": "da39903c569807d8627775213035290018bbc0ea9271fcb8a43b081da6b5d57a",
+      "output_sha256": "fcb82dd774cb6430051a6463d2a607543d059a589c606a82f8815ca0e7e214ce",
       "replacements": 0,
       "overlay": true
     },
@@ -1285,16 +1355,128 @@
       "overlay": false
     },
     {
+      "path": "docs/API.md",
+      "source_sha256": null,
+      "output_sha256": "d616357fb1e3ed2593be16ecb7d23c6ef36075932c0305c338867c8319227be2",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "source_sha256": null,
+      "output_sha256": "ddc91da42d0df24bc4fd39722e87a069e36fd54b47e27b0b687c12003f6b1b2b",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/CONFIGURATION.md",
+      "source_sha256": null,
+      "output_sha256": "88f96bb310afdc78b018048031618a228b37de82f1bb19260bb5b726c65f6133",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "source_sha256": null,
+      "output_sha256": "715a9e21b20802c111f4105034fd341c5243649c9f6834b541abe3df7d775d9f",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/DEVELOPMENT.md",
+      "source_sha256": null,
+      "output_sha256": "eb9ea6209edd218fe53bf93833ac6a72c900014d0fcb6daa61bbe87c6ee3388c",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/FEATURES.md",
+      "source_sha256": null,
+      "output_sha256": "cfbce28c23ec8950ea943446d37f74b9824dbf63c1db9eb564219999307f2197",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/GLOSSARY.md",
+      "source_sha256": null,
+      "output_sha256": "fc9401dd93d9a80e796808b9a908c1db645d1d9adf23ce7a79b0c9d09ca189e1",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/README.md",
+      "source_sha256": null,
+      "output_sha256": "79c8ca0b66411b6bdb53782affbc897fb1077ca04e3d5ae850dd8d836afddb19",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/SECURITY-MODEL.md",
+      "source_sha256": null,
+      "output_sha256": "9d35b2e2eb00225d2435a55165c6540163b19920ef40df4d82a8e860cff34d61",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/TESTING.md",
+      "source_sha256": null,
+      "output_sha256": "f1759246a6c522a243368aaab5ceee09e5a35cf21b9c95409d2a2d69eb0abf92",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/architecture/backend.md",
+      "source_sha256": null,
+      "output_sha256": "9b9fcb5879724b5b41c3c5a8779318482d01a586405066156fe910186fa44122",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/architecture/dashboard.md",
+      "source_sha256": null,
+      "output_sha256": "333cd08045c4471e2b657e3be1ccad5327f42a8b49aaf862dc00c47c3cf84dd9",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/architecture/data-model.md",
+      "source_sha256": null,
+      "output_sha256": "aa1879d8575d41b9ac06356e79686b539ae5455f4da36e8373bba3f61e7565f2",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/architecture/flux-platform.md",
+      "source_sha256": null,
+      "output_sha256": "cf66324f41520def9136c45636d2792d5649fa69aeeb46ded32ed6a267ec3566",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/architecture/integrations.md",
+      "source_sha256": null,
+      "output_sha256": "fa05309b282f07377d13dc29987a0a23ccbd28343f81d7cca3eefef1a8f51a81",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
+      "path": "docs/architecture/request-flows.md",
+      "source_sha256": null,
+      "output_sha256": "1f506e4754c99ae21ba5886655b3ae776422492f289ef24dbc6942b96877585a",
+      "replacements": 0,
+      "overlay": true
+    },
+    {
       "path": "docs/platform/SUBADMIN_GUIDE.md",
       "source_sha256": null,
-      "output_sha256": "89b86153c1d6c7fb9190089e4418c1d1313efe0a11154af89040fde55cac139b",
+      "output_sha256": "eb552e1a723376078da631315150b63b8518dbff9fe46cb8513ac606c0a81b86",
       "replacements": 0,
       "overlay": true
     },
     {
       "path": "docs/platform/SUPERADMIN_GUIDE.md",
       "source_sha256": null,
-      "output_sha256": "c45a56fd87f8c1144b30a4b5a070a65324c46cc66d612c082acbbf71544d6c29",
+      "output_sha256": "526fd015487bb98cb318d89458d484d2f452b4dd5ab138024b0cd0aff5a19ea3",
       "replacements": 0,
       "overlay": true
     },
@@ -5680,12 +5862,5 @@
       "replacements": 0,
       "overlay": false
     }
-  ],
-  "prior_snapshot_manifest_sha256": "8aace29e85166527e02dafc48c474357a3681e2c5e9dce2b7af52cb376237bc6",
-  "publication": {
-    "scope": "sanitized-source-only",
-    "rights_clearance": "unresolved",
-    "credential_response": "not-established",
-    "runtime_verification": "unavailable"
-  }
+  ]
 }

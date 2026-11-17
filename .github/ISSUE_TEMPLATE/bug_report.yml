@@ -1,0 +1,88 @@
+name: Bug report
+description: Report a defect in the code, tests, documentation or tooling in this repository
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a problem.
+
+        Before you continue, please check:
+        - This is not a **security** issue — those go through the private route in
+          `SECURITY.md`, never a public issue.
+        - This is not a deployment, uptime or customer-data problem — see `SUPPORT.md`
+          for what this repository can and cannot help with.
+        - You have removed every real credential, token, wallet address, domain, phone
+          number, handle and customer record from what you paste below. Use obviously
+          synthetic placeholders instead.
+  - type: input
+    id: area
+    attributes:
+      label: Affected area
+      description: Which part of the tree or which surface is involved?
+      placeholder: "e.g. worker_api/app/services/billing, /dashboard/orders, integrations/trojan, docs/TESTING.md"
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Describe the actual behaviour, including the full error text.
+      placeholder: Include the complete error message or unexpected output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exact commands or dashboard steps. A maintainer should be able to follow these without guessing.
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: verification
+    attributes:
+      label: How did you run the code?
+      description: Pick the closest match; it tells maintainers how much of the stack you had available.
+      options:
+        - Service-free safety suite only (no Docker)
+        - Disposable Docker test stack via scripts/test.sh
+        - Full local stack
+        - Dashboard only
+        - Source inspection only, no execution
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Versions that matter. Use placeholders for anything identifying.
+      placeholder: |
+        OS: Windows 11 / Ubuntu 24.04 / macOS 15
+        Python: 3.11.x
+        Node: 20.x (dashboard issues only)
+        Docker: 27.x with Compose v2 (if used)
+        Commit: <short sha from this repository>
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have removed all credentials, operator identifiers and personal data from this report.
+          required: true
+        - label: I have read SUPPORT.md and this is not a deployment, uptime or third-party service problem.
+          required: true
+        - label: I understand this is an experimental snapshot and no response time is guaranteed.
+          required: true

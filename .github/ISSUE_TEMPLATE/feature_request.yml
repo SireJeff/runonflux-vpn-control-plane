@@ -1,0 +1,77 @@
+name: Feature request
+description: Propose an improvement, or an honest gap you think is worth closing
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposals are welcome, but this is an experimental project maintained on a
+        best-effort basis. Ideas that come with a clear problem statement and a
+        narrow scope are far more likely to be accepted.
+
+        Large changes — new subsystems, schema changes, new protocols, auth or billing
+        changes — should be discussed here before any code is written. See
+        `CONTRIBUTING.md`.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Protocol delivery (SSH, Shadowsocks, Outline, Trojan, V2Ray, HTTP proxy)
+        - Subscriptions and packages
+        - Wallet, billing and payments
+        - Orders and approvals
+        - Reseller administration
+        - End-user experience (bot or portal)
+        - RunOnFlux / FluxCloud integration
+        - DNS, TLD and domain management
+        - Usage, telemetry and analytics
+        - Notifications and broadcasts
+        - Referral and free-config
+        - Compliance and data handling
+        - Developer experience, tests and tooling
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What is difficult, missing or wrong today? Describe the situation rather than the solution.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: What would you change, and why is that the right place to change it?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What else could solve this, and why did you reject it? "None" is an acceptable answer.
+    validations:
+      required: false
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact and risks
+      description: Who benefits, what could break, and does it touch data, credentials, money or migration?
+      placeholder: |
+        For example: requires a schema migration, changes an existing response shape,
+        touches credential issuance, affects existing deployments.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: This does not depend on private operational history, credentials or infrastructure of the system this snapshot came from.
+          required: true
+        - label: I understand that adding a capability to this snapshot does not make it production-verified.
+          required: true
